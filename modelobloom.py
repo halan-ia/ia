@@ -28,9 +28,11 @@ from patsy.util import widen
 #from setuptools.command.upload import upload
 from xdg.Config import language
 
-#Configuração do StreamLit
-st.set_page_config(page_title="Assistente de Estudantes")
-st.title("Profressor Privado")
+#1. Configuração do StreamLit
+#1.2 configuração da Página
+st.set_page_config(page_title="Assistente de Estudantes de Contabilidade" page_icon="📚", layout="centered", initial_sidebar_state="expanded")
+st.title("👨‍🏫 Professor Privado de Contabilidade")
+
 #st.button("Botão")
 #st.chat_input("Digite sua mensagem")
 
@@ -104,6 +106,7 @@ for message in st.session_state.chat_history:
 # Entrada do usuário
 user_query = st.chat_input("Fale com seu professor aqui")
 if user_query is not None and user_query != "":
+    st.write(st.write("🔍 Processando sua dúvida..."))
     st.session_state.chat_history.append(HumanMessage(content=user_query))
     with st.chat_message("Human"):
         st.markdown(user_query)
