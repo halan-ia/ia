@@ -107,12 +107,12 @@ for message in st.session_state.chat_history:
 user_query = st.chat_input("Fale com seu professor aqui")
 if user_query is not None and user_query != "":
     st.session_state.chat_history.append(HumanMessage(content=user_query))
-    with st.chat_message("Human"):
+    with st.chat_message("Human", avatar="🧑‍🎓"):
         st.markdown(user_query)
     # Mostra feedback visual enquanto processa abaixo da pergunta
     processing_placeholder = st.empty()  # Cria um espaço reservado para a mensagem de processamento
     processing_placeholder.write("🔍 Processando sua dúvida...")
-    with st.chat_message("AI"):
+    with st.chat_message("AI", avatar="🧑‍🏫"):
         resp = model_response(user_query, st.session_state.chat_history, model_class)
         for response_part in resp:
             st.markdown(response_part)  # Stream da resposta
