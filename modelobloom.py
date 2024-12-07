@@ -106,7 +106,8 @@ for message in st.session_state.chat_history:
 # Entrada do usuário
 user_query = st.chat_input("Fale com seu professor aqui")
 if user_query is not None and user_query != "":
-    st.write(st.write("🔍 Processando sua dúvida..."))
+    processing_placeholder = st.empty()  # Cria um espaço reservado para a mensagem de processamento
+    processing_placeholder.write("🔍 Processando sua dúvida...")
     st.session_state.chat_history.append(HumanMessage(content=user_query))
     with st.chat_message("Human"):
         st.markdown(user_query)
@@ -115,6 +116,7 @@ if user_query is not None and user_query != "":
         for response_part in resp:
             st.markdown(response_part)  # Stream da resposta
     st.session_state.chat_history.append(AIMessage(content=response_part))
+    processing_placeholder.empty()
 
 # Indexação e Recuperação
 
