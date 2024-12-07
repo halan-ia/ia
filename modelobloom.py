@@ -19,10 +19,10 @@ import os
 # load_dotenv()
 
 # Acesse as variáveis de ambiente diretamente
-token = os.getenv("TOKEN")
+token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 
 if not token:
-    raise ValueError("TOKEN não estão configurados nas variáveis de ambiente.")
+    raise ValueError("API_KEY não configurada nas variáveis de ambiente.")
 
 from patsy.util import widen
 from setuptools.command.upload import upload
