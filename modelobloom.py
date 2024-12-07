@@ -30,7 +30,7 @@ from xdg.Config import language
 
 #1. Configuração do StreamLit
 #1.2 configuração da Página
-st.set_page_config(page_title="Assistente de Estudantes de Contabilidade" page_icon="📚", layout="centered", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Assistente de Estudantes de Contabilidade", page_icon="📚", layout="centered", initial_sidebar_state="expanded")
 st.title("👨‍🏫 Professor Privado de Contabilidade")
 
 #st.button("Botão")
