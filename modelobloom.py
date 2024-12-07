@@ -36,7 +36,7 @@ st.title("Profressor Privado")
 
 model_class = "hf_hub"
 
-def model_hf_hub(model = "meta-llama/Meta-Llama-3-8B-Instruct", temperature=0.5):
+def model_hf_hub(model = "meta-llama/Meta-Llama-3-8B-Instruct", temperature=1.0):
     llm= HuggingFaceHub(repo_id=model,
                         model_kwargs={
                             "temperature": temperature,
