@@ -25,7 +25,7 @@ if not token:
     raise ValueError("API_KEY não configurada nas variáveis de ambiente.")
 
 from patsy.util import widen
-from setuptools.command.upload import upload
+#from setuptools.command.upload import upload
 from xdg.Config import language
 
 #Configuração do StreamLit
