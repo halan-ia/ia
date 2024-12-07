@@ -91,16 +91,16 @@ def model_response(user_query, chat_history, model_class):
 # Verificando se chat_history está no session_state
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [
-        AIMessage(content="Olá, sou seu professor virtual! Como posso te ajudar, cara?")
+        AIMessage(content="Como posso te ajudar nos seus estudos hoje?")
     ]
 
 # Exibindo as mensagens do chat
 for message in st.session_state.chat_history:
     if isinstance(message, AIMessage):
-        with st.chat_message("AI"):
+        with st.chat_message("AI", avatar="🧑‍🏫"):
             st.write(message.content)
     elif isinstance(message, HumanMessage):
-        with st.chat_message("Human"):
+        with st.chat_message("Human", avatar="🧑‍🎓"):
             st.write(message.content)
 
 # Entrada do usuário
