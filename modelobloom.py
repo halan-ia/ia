@@ -32,7 +32,7 @@ from xdg.Config import language
 #1.2 configuração da Página
 st.set_page_config(page_title="Assistente de Estudantes de Contabilidade", page_icon="📚", layout="centered", initial_sidebar_state="expanded")
 st.title("👨‍🏫 Professor Privado de Contabilidade")
-
+st.info("💡 Dica: Pergunte sobre conceitos de contabilidade, como 'O que é patrimônio líquido?' ou 'Como funciona a depreciação?'")
 #st.button("Botão")
 #st.chat_input("Digite sua mensagem")
 
