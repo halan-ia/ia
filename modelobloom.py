@@ -19,7 +19,7 @@ import os
 # load_dotenv()
 
 # Acesse as variáveis de ambiente diretamente
-token = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+token = os.getenv("API_TOKEN")
 
 if not token:
     raise ValueError("API_KEY não configurada nas variáveis de ambiente.")
