@@ -38,7 +38,7 @@ st.info("💡 Dica: Pergunte sobre conceitos de contabilidade, como 'O que é pa
 
 model_class = "hf_hub"
 
-def model_hf_hub(model = "meta-llama/Meta-Llama-3-8B-Instruct", temperature=1.0):
+def model_hf_hub(model = "meta-llama/Meta-Llama-3-8B-Instruct", temperature=0.0):
     llm= HuggingFaceHub(repo_id=model,
                         model_kwargs={
                             "temperature": temperature,
