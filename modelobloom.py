@@ -13,12 +13,20 @@ import torch
 from langchain_huggingface import ChatHuggingFace
 from langchain_community.llms import HuggingFaceHub
 
-from dotenv import load_dotenv
+import os
+
+# Em vez de usar dotenv
+# load_dotenv()
+
+# Acesse as variáveis de ambiente diretamente
+token = os.getenv("TOKEN")
+
+if not token:
+    raise ValueError("TOKEN não estão configurados nas variáveis de ambiente.")
+
 from patsy.util import widen
 from setuptools.command.upload import upload
 from xdg.Config import language
-
-load_dotenv()
 
 #Configuração do StreamLit
 st.set_page_config(page_title="Assistente de Estudantes")
