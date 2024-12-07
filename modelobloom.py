@@ -43,13 +43,10 @@ def model_hf_hub(model = "meta-llama/Llama-3.1-70B-Instruct", temperature=0.1):
                         model_kwargs={
                             "temperature": temperature,
                             "return_full_text": False,
-                            "max_new_tokens": 512,
+                            "max_new_tokens": 500,
                         })
     return llm
 
-def model_openai(model = "gpt-4o-mini", temperature = 0.1):
-    llm = ChatOpenAI(model = model, temperature=temperature)
-    return llm
 def model_ollama(model = "phi3", temperature = 0.1):
     llm = ChatOllama(model=model, temperature=temperature)
     return llm
