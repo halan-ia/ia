@@ -1,4 +1,4 @@
 streamlit
 langchain
 langchain-ollama
-openai
+langchain-openai
