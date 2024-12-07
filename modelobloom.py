@@ -106,11 +106,10 @@ if user_query is not None and user_query != "":
     st.session_state.chat_history.append(AIMessage(content=response_part))
 
 # Indexação e Recuperação
-def confit_retriever(uploads):
+#def confit_retriever(uploads):
 
 
 
 
 # Criação de painel lateral na interface
-upload = st.sidebar.file_uploader(label="Enviar Documetos", type=["pdf"],
-                                  accept_multiple_files=True)
+#upload = st.sidebar.file_uploader(label="Enviar Documetos", type=["pdf"], accept_multiple_files=True)
