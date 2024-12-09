@@ -3,6 +3,9 @@ import os
 
 # Configuração do título
 st.set_page_config(page_title="Home", layout="centered")
+import os
+
+script_path = "pages/"
 
 # Página inicial
 st.title("Bem-vindo ao Hub de Projetos")
