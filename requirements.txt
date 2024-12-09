@@ -10,3 +10,4 @@ huggingface-hub
 python-dotenv
 patsy
 pyxdg
+PyPDF2
