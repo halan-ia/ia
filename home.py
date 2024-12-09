@@ -6,7 +6,7 @@ import importlib.util
 st.set_page_config(page_title="Home", layout="centered")
 
 # Diretório onde os projetos estão localizados
-scripts_dir = "pages/"
+scripts_dir = "pages/projeto1.py"
 
 # Página inicial
 st.title("Bem-vindo ao Hub de Projetos")
