@@ -26,10 +26,10 @@ if project_selected != "Selecione":
     
     # Verificando se o arquivo existe
     if os.path.exists(script_path):
-        # Carregando o conteúdo do script e exibindo no Streamlit
+        # Carregando e executando o script
         with open(script_path, "r") as file:
             code = file.read()
-            st.code(code, language="python")  # Exibe o conteúdo do script no Streamlit
+            exec(code)  # Executa o código Python do script selecionado
     else:
         st.error(f"Erro: O arquivo do {project_selected} não foi encontrado.")
         st.write(f"Caminho procurado: {script_path}")  # Exibe o caminho para depuração
