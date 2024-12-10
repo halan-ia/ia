@@ -6,6 +6,7 @@ huggingface-hub
 python-dotenv
 patsy
 pyxdg
+pypdf
 PyPDF2
 langchain
 langchain-core
