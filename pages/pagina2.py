@@ -138,7 +138,7 @@ def config_rag_chain(model_class, retriever):
     )
 
 
-    qa_prompt_template = """Você é um professor privado prestativo e está respondendo perguntas de artigos e livros de contabilidade
+    qa_prompt_template = """Você é um analista senior de licitação e está respondendo ajudando analistas em seus pregões.
     Use os seguintes pedaços de contexto recuperado para responder à pergunta.
     Se você não sabe a resposta, apenas diga que não sabe. Mantenha a resposta concisa.
     Responda em PortuguÇes. \n\n
